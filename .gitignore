@@ -1,4 +1,5 @@
-# Datasets (too large for GitHub)
+# Data (raw + processed, too large for GitHub)
+data/
 *.zip
 *.csv
 
@@ -9,13 +10,12 @@ __pycache__/
 .pytest_cache/
 .ipynb_checkpoints/
 
-# PyTorch checkpoints & TensorBoard logs
+# PyTorch checkpoints
 checkpoints/
-runs/
 
 # OS
 Thumbs.db
 .DS_Store
 
-# Pandoc
+# Installers
 *.msi
