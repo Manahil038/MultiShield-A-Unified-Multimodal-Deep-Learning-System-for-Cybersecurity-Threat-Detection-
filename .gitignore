@@ -1,0 +1,21 @@
+# Datasets (too large for GitHub)
+*.zip
+*.csv
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.ipynb_checkpoints/
+
+# PyTorch checkpoints & TensorBoard logs
+checkpoints/
+runs/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Pandoc
+*.msi
