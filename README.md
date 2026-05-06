@@ -37,10 +37,13 @@ pip install -r requirements.txt
 # Place dataset zips into the data/ directory.
 # See reports/ for dataset provenance details.
 
-# 4. Run smoke tests
+# 4. Reproduce the Baseline MLP Experiment
+python experiments/run_baseline.py
+
+# 5. Run smoke tests
 pytest tests/ -v
 
-# 5. Launch TensorBoard (after training)
+# 6. Launch TensorBoard (to view Baseline tracking logs)
 tensorboard --logdir experiments/
 ```
 

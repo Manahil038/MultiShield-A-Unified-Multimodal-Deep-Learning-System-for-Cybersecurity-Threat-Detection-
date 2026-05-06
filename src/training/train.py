@@ -5,6 +5,9 @@ from torch.utils.data import DataLoader
 from torch.utils.tensorboard import SummaryWriter
 from typing import Dict, Any
 
+from src.utils.helpers import seed_everything
+seed_everything(42)
+
 def train_model(
     model: nn.Module,
     train_loader: DataLoader,

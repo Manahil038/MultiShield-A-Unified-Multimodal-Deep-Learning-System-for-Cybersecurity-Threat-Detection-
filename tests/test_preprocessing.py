@@ -1,9 +1,12 @@
 import pytest
 import pandas as pd
 import numpy as np
+import torch
+from PIL import Image
 
 from src.preprocessing.text_preprocessor import TextPreprocessor
 from src.preprocessing.tabular_preprocessor import TabularPreprocessor
+from src.preprocessing.image_preprocessor import ImagePreprocessor
 
 def test_text_preprocessor_shapes():
     """Smoke test for text preprocessor shapes and types."""
@@ -109,3 +112,36 @@ def test_tabular_leakage_prevention():
     
     # The one-hot encodings for the unseen protocol should be all zeros
     assert np.all(out[0, 2:] == 0)
+
+def test_image_preprocessor_shapes():
+    """Smoke test for image preprocessor shapes and types."""
+    # Create mock images (RGB, 100x100)
+    mock_images = [Image.new('RGB', (100, 100), color='red') for _ in range(3)]
+    
+    preprocessor = ImagePreprocessor(target_size=256, augment_p=0.0)
+    
+    with pytest.raises(RuntimeError):
+        preprocessor.transform(mock_images)
+        
+    out = preprocessor.fit_transform(mock_images)
+    
+    assert isinstance(out, torch.Tensor)
+    assert out.shape == (3, 3, 256, 256)
+    # Check normalization: values should be centered around 0 if mean=0.5, std=0.5
+    # Red channel (1.0) -> (1.0 - 0.5) / 0.5 = 1.0
+    assert torch.allclose(out[0, 0, 0, 0], torch.tensor(1.0))
+    
+def test_image_preprocessor_deterministic():
+    """Test deterministic output given a seed during augmentation."""
+    mock_images = [Image.new('RGB', (100, 100), color='green') for _ in range(2)]
+    
+    prep1 = ImagePreprocessor(seed=42, augment_p=1.0)
+    prep1.fit(mock_images)
+    out1 = prep1.transform(mock_images, augment=True)
+    
+    prep2 = ImagePreprocessor(seed=42, augment_p=1.0)
+    prep2.fit(mock_images)
+    out2 = prep2.transform(mock_images, augment=True)
+    
+    # Exact equality since seed is fixed
+    assert torch.equal(out1, out2)

@@ -4,7 +4,7 @@ import numpy as np
 import torch
 
 
-def set_seed(seed: int = 42):
+def seed_everything(seed: int = 42):
     """
     Set random seed for full reproducibility across Python, NumPy, and PyTorch.
     """
