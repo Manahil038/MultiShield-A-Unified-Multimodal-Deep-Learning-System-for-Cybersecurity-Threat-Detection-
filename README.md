@@ -8,7 +8,8 @@ A modular deep learning framework that detects cybersecurity threats across mult
 project-root/
 ├── data/                # raw + processed data (gitignored)
 ├── notebooks/           # exploration only
-│   └── 01_EDA.ipynb
+│   ├── 01_EDA.ipynb     # full EDA — all 4 datasets incl. deepfake
+│   └── download_data.ipynb
 ├── src/
 │   ├── data/            # loading, splitting
 │   ├── preprocessing/   # transforms, augmentation
@@ -54,7 +55,7 @@ tensorboard --logdir experiments/
 | Phishing Emails | Text | Binary Classification |
 | Fake & Real News | Text | Binary Classification |
 | UNSW-NB15 | Tabular | Multi-class Classification |
-| FaceForensics++ | Image | Binary Classification (Pending) |
+| Real vs Fake Faces (140k) | Image | Binary Classification |
 
 ## Key Design Decisions
 
