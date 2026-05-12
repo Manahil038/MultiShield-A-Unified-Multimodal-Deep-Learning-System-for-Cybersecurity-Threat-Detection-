@@ -136,3 +136,65 @@ class TextPreprocessor(BasePreprocessor):
             processed.append(truncated)
             
         return processed
+
+import collections
+import torch
+
+class SimpleTokenizer:
+    """
+    A basic vocabulary builder and integer encoder for text sequences.
+    Required to feed text into an LSTM.
+    """
+    def __init__(self, vocab_size: int = 10000, unk_token: str = '<UNK>', pad_token: str = '<PAD>'):
+        self.vocab_size = vocab_size
+        self.unk_token = unk_token
+        self.pad_token = pad_token
+        self.word2idx = {self.pad_token: 0, self.unk_token: 1}
+        self.idx2word = {0: self.pad_token, 1: self.unk_token}
+        self.is_fitted = False
+        
+    def fit(self, X: List[str]):
+        """Build the vocabulary based on term frequency."""
+        counter = collections.Counter()
+        for text in X:
+            counter.update(text.split())
+            
+        # Keep most common words, leaving space for PAD and UNK
+        most_common = counter.most_common(self.vocab_size - 2)
+        
+        for idx, (word, _) in enumerate(most_common, start=2):
+            self.word2idx[word] = idx
+            self.idx2word[idx] = word
+            
+        self.is_fitted = True
+        
+    def transform(self, X: List[str], max_len: int = 256) -> Tuple[torch.Tensor, torch.Tensor]:
+        """
+        Convert list of strings into padded integer tensors and sequence lengths.
+        Returns:
+            padded_seqs: Tensor of shape (len(X), max_len)
+            lengths: Tensor of shape (len(X),) containing true lengths before padding
+        """
+        if not self.is_fitted:
+            raise ValueError("Tokenizer must be fitted before calling transform.")
+            
+        seqs = []
+        lengths = []
+        
+        for text in X:
+            words = text.split()
+            seq = [self.word2idx.get(w, self.word2idx[self.unk_token]) for w in words]
+            # Truncate
+            seq = seq[:max_len]
+            # Length
+            length = len(seq) if len(seq) > 0 else 1 # Avoid 0-length
+            if len(seq) == 0:
+                seq = [self.word2idx[self.unk_token]]
+                
+            lengths.append(length)
+            
+            # Pad
+            padded_seq = seq + [self.word2idx[self.pad_token]] * (max_len - len(seq))
+            seqs.append(padded_seq)
+            
+        return torch.tensor(seqs, dtype=torch.long), torch.tensor(lengths, dtype=torch.long)
