@@ -2,7 +2,7 @@ import re
 import random
 import numpy as np
 import pandas as pd
-from typing import List, Union
+from typing import List, Union, Tuple
 import nltk
 from nltk.corpus import wordnet
 
@@ -40,7 +40,7 @@ class TextPreprocessor(BasePreprocessor):
         return self
         
     def _clean_text(self, text: str) -> str:
-        """Lowercasing, HTML stripping, URL replacement."""
+        """Lowercasing, HTML stripping, URL replacement, and data leakage/source bias mitigation."""
         if not isinstance(text, str):
             return ""
         # Lowercase
@@ -49,6 +49,22 @@ class TextPreprocessor(BasePreprocessor):
         text = re.sub(r'<[^>]+>', ' ', text)
         # URL tokenization
         text = re.sub(r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', '[URL]', text)
+        
+        # Proactive Leakage Mitigation: Strip Reuters publication header from the beginning of the body
+        if '[title_end]' in text:
+            parts = text.split('[title_end]', 1)
+            title = parts[0]
+            body = parts[1]
+            body = re.sub(r'^.*?\(\s*reuters\s*\)\s*[-–—\s]*[-–—]', ' ', body, flags=re.IGNORECASE)
+            body = re.sub(r'^.*?\(\s*reuters\s*\)\s*', ' ', body, flags=re.IGNORECASE)
+            text = title + ' ' + body
+        else:
+            text = re.sub(r'^.*?\(\s*reuters\s*\)\s*[-–—\s]*[-–—]', ' ', text, flags=re.IGNORECASE)
+            text = re.sub(r'^.*?\(\s*reuters\s*\)\s*', ' ', text, flags=re.IGNORECASE)
+        
+        # Remove any residual occurrences of "reuters" to prevent shortcut learning
+        text = re.sub(r'\breuters\b', ' ', text, flags=re.IGNORECASE)
+        
         # Remove extra whitespace
         text = ' '.join(text.split())
         return text

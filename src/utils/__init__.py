@@ -1,3 +1,5 @@
-from .helpers import set_seed, get_device
+from .helpers import seed_everything, get_device
 
-__all__ = ['set_seed', 'get_device']
+set_seed = seed_everything
+
+__all__ = ['seed_everything', 'set_seed', 'get_device']

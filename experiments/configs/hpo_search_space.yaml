@@ -1,0 +1,33 @@
+# UNSW-NB15 DeepTabularMLP Hyperparameter Optimization Search Space
+# Configures the bounds and choices for Optuna TPE optimization.
+model: DeepTabularMLP
+search_space:
+  learning_rate:
+    type: float
+    low: 1e-5
+    high: 1e-1
+    log: true
+  batch_size:
+    type: categorical
+    choices: [32, 64, 128, 256]
+  weight_decay:
+    type: float
+    low: 1e-6
+    high: 1e-2
+    log: true
+  dropout_p:
+    type: float
+    low: 0.0
+    high: 0.6
+    log: false
+  num_layers:
+    type: int
+    low: 2
+    high: 5
+    log: false
+  hidden_dim:
+    type: categorical
+    choices: [32, 64, 128, 256]
+  optimizer_choice:
+    type: categorical
+    choices: ["AdamW", "SGD"]

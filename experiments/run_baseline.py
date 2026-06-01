@@ -90,6 +90,37 @@ def main():
         log_dir=os.path.join("experiments", "runs", "baseline_unsw_nb15")
     )
     
+    # 6. Save Dashboard Plot
+    print("Generating baseline training dashboard...")
+    import matplotlib.pyplot as plt
+    os.makedirs("reports", exist_ok=True)
+    history = metrics['history']
+    
+    fig, axes = plt.subplots(1, 2, figsize=(14, 5))
+    
+    # Loss Plot
+    axes[0].plot(range(1, len(history['train_loss'])+1), history['train_loss'], label='Train Loss', color='#3b82f6', marker='o')
+    axes[0].plot(range(1, len(history['val_loss'])+1), history['val_loss'], label='Val Loss', color='#ef4444', marker='s')
+    axes[0].set_title('Baseline MLP: Loss Curves', fontsize=14, fontweight='bold', pad=10)
+    axes[0].set_xlabel('Epochs', fontsize=12)
+    axes[0].set_ylabel('Loss', fontsize=12)
+    axes[0].legend(fontsize=11)
+    axes[0].grid(True, linestyle='--', alpha=0.5)
+    
+    # Accuracy Plot
+    axes[1].plot(range(1, len(history['train_acc'])+1), [x * 100 for x in history['train_acc']], label='Train Acc', color='#10b981', marker='o')
+    axes[1].plot(range(1, len(history['val_acc'])+1), [x * 100 for x in history['val_acc']], label='Val Acc', color='#f59e0b', marker='s')
+    axes[1].set_title('Baseline MLP: Accuracy Curves', fontsize=14, fontweight='bold', pad=10)
+    axes[1].set_xlabel('Epochs', fontsize=12)
+    axes[1].set_ylabel('Accuracy (%)', fontsize=12)
+    axes[1].legend(fontsize=11)
+    axes[1].grid(True, linestyle='--', alpha=0.5)
+    
+    plt.tight_layout()
+    plot_path = os.path.join("reports", "baseline_dashboard.png")
+    plt.savefig(plot_path, dpi=150, bbox_inches='tight')
+    print(f"Saved dashboard plot to {plot_path}")
+    
     print("Baseline Experiment Completed Successfully.")
 
 if __name__ == "__main__":
