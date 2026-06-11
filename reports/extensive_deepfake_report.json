@@ -1,0 +1,2312 @@
+{
+    "summary": {
+        "total_tested": 229,
+        "passed": 217,
+        "failed": 12,
+        "accuracy": 0.9475982532751092,
+        "precision": 0.9338842975206612,
+        "recall": 0.9658119658119658,
+        "f1_score": 0.9495798319327732,
+        "mean_confidence": 0.9497167161672306,
+        "confusion_matrix": {
+            "tp": 113,
+            "tn": 104,
+            "fp": 8,
+            "fn": 4
+        }
+    },
+    "failures": [
+        {
+            "name": "StyleGAN Fake 5",
+            "filepath": "scratch/extra_fake_5.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Real Face",
+            "probability": 0.07833043532446027,
+            "confidence": 0.9216695646755397,
+            "passed": false,
+            "source": "New StyleGAN Internet Sample"
+        },
+        {
+            "name": "00605.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00605.jpg",
+            "expected": "Real Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9435552060604095,
+            "confidence": 0.9435552060604095,
+            "passed": false,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00431.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00431.jpg",
+            "expected": "Real Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.5445446670055389,
+            "confidence": 0.5445446670055389,
+            "passed": false,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00554.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00554.jpg",
+            "expected": "Real Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.4799303263425827,
+            "confidence": 0.4799303263425827,
+            "passed": false,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00037.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00037.jpg",
+            "expected": "Real Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.6879288852214813,
+            "confidence": 0.6879288852214813,
+            "passed": false,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00128.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00128.jpg",
+            "expected": "Real Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.6022005826234818,
+            "confidence": 0.6022005826234818,
+            "passed": false,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00462.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00462.jpg",
+            "expected": "Real Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.435184121131897,
+            "confidence": 0.435184121131897,
+            "passed": false,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00207.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00207.jpg",
+            "expected": "Real Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.46986622363328934,
+            "confidence": 0.46986622363328934,
+            "passed": false,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00464.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00464.jpg",
+            "expected": "Real Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9179166257381439,
+            "confidence": 0.9179166257381439,
+            "passed": false,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "0D9VWX8G4M.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\0D9VWX8G4M.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Real Face",
+            "probability": 0.3615419026464224,
+            "confidence": 0.6384580973535776,
+            "passed": false,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "088R8EA4IM.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\088R8EA4IM.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Real Face",
+            "probability": 0.028157185297459364,
+            "confidence": 0.9718428147025406,
+            "passed": false,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "01NH00JKMJ.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\01NH00JKMJ.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Real Face",
+            "probability": 0.29550104960799217,
+            "confidence": 0.7044989503920078,
+            "passed": false,
+            "source": "Validation Dataset"
+        }
+    ],
+    "passes": [
+        {
+            "name": "Celeb Real: Elon Musk",
+            "filepath": "scratch/real_elon.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.0007296418516489211,
+            "confidence": 0.9992703581483511,
+            "passed": true,
+            "source": "New Celeb Internet Sample"
+        },
+        {
+            "name": "Celeb Real: Joe Biden",
+            "filepath": "scratch/real_biden.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 7.782871620065634e-06,
+            "confidence": 0.9999922171283799,
+            "passed": true,
+            "source": "New Celeb Internet Sample"
+        },
+        {
+            "name": "Celeb Real: Bill Gates",
+            "filepath": "scratch/real_gates.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.0001653484491725976,
+            "confidence": 0.9998346515508274,
+            "passed": true,
+            "source": "New Celeb Internet Sample"
+        },
+        {
+            "name": "Celeb Real: Cristiano Ronaldo",
+            "filepath": "scratch/real_ronaldo.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 2.3555442396627768e-07,
+            "confidence": 0.999999764445576,
+            "passed": true,
+            "source": "New Celeb Internet Sample"
+        },
+        {
+            "name": "Celeb Real: Lionel Messi",
+            "filepath": "scratch/real_messi.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.0020059920207131654,
+            "confidence": 0.9979940079792868,
+            "passed": true,
+            "source": "New Celeb Internet Sample"
+        },
+        {
+            "name": "StyleGAN Fake 1",
+            "filepath": "scratch/extra_fake_1.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9970782995223999,
+            "confidence": 0.9970782995223999,
+            "passed": true,
+            "source": "New StyleGAN Internet Sample"
+        },
+        {
+            "name": "StyleGAN Fake 2",
+            "filepath": "scratch/extra_fake_2.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.8963128626346588,
+            "confidence": 0.8963128626346588,
+            "passed": true,
+            "source": "New StyleGAN Internet Sample"
+        },
+        {
+            "name": "StyleGAN Fake 3",
+            "filepath": "scratch/extra_fake_3.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.6087527573108673,
+            "confidence": 0.6087527573108673,
+            "passed": true,
+            "source": "New StyleGAN Internet Sample"
+        },
+        {
+            "name": "StyleGAN Fake 4",
+            "filepath": "scratch/extra_fake_4.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9956790208816528,
+            "confidence": 0.9956790208816528,
+            "passed": true,
+            "source": "New StyleGAN Internet Sample"
+        },
+        {
+            "name": "StyleGAN Fake 6",
+            "filepath": "scratch/extra_fake_6.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.6747696399688721,
+            "confidence": 0.6747696399688721,
+            "passed": true,
+            "source": "New StyleGAN Internet Sample"
+        },
+        {
+            "name": "StyleGAN Fake 7",
+            "filepath": "scratch/extra_fake_7.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9741853475570679,
+            "confidence": 0.9741853475570679,
+            "passed": true,
+            "source": "New StyleGAN Internet Sample"
+        },
+        {
+            "name": "StyleGAN Fake 8",
+            "filepath": "scratch/extra_fake_8.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9983751773834229,
+            "confidence": 0.9983751773834229,
+            "passed": true,
+            "source": "New StyleGAN Internet Sample"
+        },
+        {
+            "name": "StyleGAN Fake 9",
+            "filepath": "scratch/extra_fake_9.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9967470169067383,
+            "confidence": 0.9967470169067383,
+            "passed": true,
+            "source": "New StyleGAN Internet Sample"
+        },
+        {
+            "name": "StyleGAN Fake 10",
+            "filepath": "scratch/extra_fake_10.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.8839530348777771,
+            "confidence": 0.8839530348777771,
+            "passed": true,
+            "source": "New StyleGAN Internet Sample"
+        },
+        {
+            "name": "Local Real: 00000.jpg",
+            "filepath": "sample_data/deepfake_faces/real\\00000.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.007955396373290569,
+            "confidence": 0.9920446036267094,
+            "passed": true,
+            "source": "Sample Data"
+        },
+        {
+            "name": "Local Real: 00002.jpg",
+            "filepath": "sample_data/deepfake_faces/real\\00002.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.002638612058945,
+            "confidence": 0.997361387941055,
+            "passed": true,
+            "source": "Sample Data"
+        },
+        {
+            "name": "Local Real: 00003.jpg",
+            "filepath": "sample_data/deepfake_faces/real\\00003.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.3298933804035187,
+            "confidence": 0.6701066195964813,
+            "passed": true,
+            "source": "Sample Data"
+        },
+        {
+            "name": "Local Real: 00006.jpg",
+            "filepath": "sample_data/deepfake_faces/real\\00006.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.002791194390738383,
+            "confidence": 0.9972088056092616,
+            "passed": true,
+            "source": "Sample Data"
+        },
+        {
+            "name": "Local Real: 00009.jpg",
+            "filepath": "sample_data/deepfake_faces/real\\00009.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 5.1444475502648856e-05,
+            "confidence": 0.9999485555244974,
+            "passed": true,
+            "source": "Sample Data"
+        },
+        {
+            "name": "Local Fake: 001DDU0NI4.jpg",
+            "filepath": "sample_data/deepfake_faces/fake\\001DDU0NI4.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9969797134399414,
+            "confidence": 0.9969797134399414,
+            "passed": true,
+            "source": "Sample Data"
+        },
+        {
+            "name": "Local Fake: 002KDWZBHU.jpg",
+            "filepath": "sample_data/deepfake_faces/fake\\002KDWZBHU.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.994464635848999,
+            "confidence": 0.994464635848999,
+            "passed": true,
+            "source": "Sample Data"
+        },
+        {
+            "name": "Local Fake: 002PMM0QG9.jpg",
+            "filepath": "sample_data/deepfake_faces/fake\\002PMM0QG9.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9912932217121124,
+            "confidence": 0.9912932217121124,
+            "passed": true,
+            "source": "Sample Data"
+        },
+        {
+            "name": "Local Fake: 002TJAKUYX.jpg",
+            "filepath": "sample_data/deepfake_faces/fake\\002TJAKUYX.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.6021130681037903,
+            "confidence": 0.6021130681037903,
+            "passed": true,
+            "source": "Sample Data"
+        },
+        {
+            "name": "Local Fake: 003IRD4LS5.jpg",
+            "filepath": "sample_data/deepfake_faces/fake\\003IRD4LS5.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9963586032390594,
+            "confidence": 0.9963586032390594,
+            "passed": true,
+            "source": "Sample Data"
+        },
+        {
+            "name": "Obama (Wikimedia)",
+            "filepath": "scratch/real_obama.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 6.93368946258488e-07,
+            "confidence": 0.9999993066310537,
+            "passed": true,
+            "source": "Internet Sample"
+        },
+        {
+            "name": "Trump (Wikimedia)",
+            "filepath": "scratch/real_trump.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.00018517499574954854,
+            "confidence": 0.9998148250042505,
+            "passed": true,
+            "source": "Internet Sample"
+        },
+        {
+            "name": "StyleGAN 1 (ThisPersonDoesNotExist)",
+            "filepath": "scratch/fake_stylegan1.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9346038997173309,
+            "confidence": 0.9346038997173309,
+            "passed": true,
+            "source": "Internet Sample"
+        },
+        {
+            "name": "StyleGAN 2 (ThisPersonDoesNotExist)",
+            "filepath": "scratch/fake_stylegan2.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9412702023983002,
+            "confidence": 0.9412702023983002,
+            "passed": true,
+            "source": "Internet Sample"
+        },
+        {
+            "name": "00551.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00551.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 2.4457882545902976e-05,
+            "confidence": 0.9999755421174541,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00095.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00095.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 1.2839524856644857e-06,
+            "confidence": 0.9999987160475143,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00024.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00024.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 2.52294420022281e-07,
+            "confidence": 0.99999974770558,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00630.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00630.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.0022886492661200464,
+            "confidence": 0.99771135073388,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00231.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00231.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.00017726224268699298,
+            "confidence": 0.999822737757313,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00186.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00186.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.11193552520126104,
+            "confidence": 0.888064474798739,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00153.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00153.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.000658896351524163,
+            "confidence": 0.9993411036484758,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00103.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00103.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.0004965124680893496,
+            "confidence": 0.9995034875319107,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00085.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00085.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.0050637980457395315,
+            "confidence": 0.9949362019542605,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00586.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00586.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.0005336573740351014,
+            "confidence": 0.9994663426259649,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00480.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00480.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.021829855628311634,
+            "confidence": 0.9781701443716884,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00064.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00064.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.004081045161001384,
+            "confidence": 0.9959189548389986,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00512.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00512.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.0005935057561146095,
+            "confidence": 0.9994064942438854,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00383.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00383.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.14268694631755352,
+            "confidence": 0.8573130536824465,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00026.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00026.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.0691082775592804,
+            "confidence": 0.9308917224407196,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00647.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00647.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 5.9380864172453585e-06,
+            "confidence": 0.9999940619135828,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00149.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00149.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.009477313957177103,
+            "confidence": 0.9905226860428229,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00154.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00154.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 8.573816012358293e-05,
+            "confidence": 0.9999142618398764,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00463.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00463.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.07043641619384289,
+            "confidence": 0.9295635838061571,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00540.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00540.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.002312208293005824,
+            "confidence": 0.9976877917069942,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00566.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00566.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.3523327112197876,
+            "confidence": 0.6476672887802124,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00494.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00494.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 6.300457653196645e-05,
+            "confidence": 0.999936995423468,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00138.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00138.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.010052403202280402,
+            "confidence": 0.9899475967977196,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00608.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00608.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 3.641784041974461e-05,
+            "confidence": 0.9999635821595803,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00380.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00380.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.13450367655605078,
+            "confidence": 0.8654963234439492,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00626.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00626.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.0013835925492458045,
+            "confidence": 0.9986164074507542,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00638.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00638.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 3.66699205187615e-05,
+            "confidence": 0.9999633300794812,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00005.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00005.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 8.253355326814926e-05,
+            "confidence": 0.9999174664467319,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00112.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00112.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.003946277985960478,
+            "confidence": 0.9960537220140395,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00609.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00609.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.002188656770158559,
+            "confidence": 0.9978113432298414,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00295.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00295.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.3148139789700508,
+            "confidence": 0.6851860210299492,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00543.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00543.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.0006714695336995646,
+            "confidence": 0.9993285304663004,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00111.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00111.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.0016739450802560896,
+            "confidence": 0.9983260549197439,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00468.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00468.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 4.24988211307209e-05,
+            "confidence": 0.9999575011788693,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00034.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00034.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.0012073233956471086,
+            "confidence": 0.9987926766043529,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00453.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00453.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.206235583871603,
+            "confidence": 0.793764416128397,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00118.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00118.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.0002025767753366381,
+            "confidence": 0.9997974232246634,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00471.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00471.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 1.564332308134908e-06,
+            "confidence": 0.9999984356676919,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00432.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00432.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.032192925456911325,
+            "confidence": 0.9678070745430887,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00253.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00253.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.00045993938692845404,
+            "confidence": 0.9995400606130715,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00101.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00101.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.013936325907707214,
+            "confidence": 0.9860636740922928,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00369.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00369.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.02553897476173006,
+            "confidence": 0.9744610252382699,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00020.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00020.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.00027154710187460296,
+            "confidence": 0.9997284528981254,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00316.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00316.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.007392533007077873,
+            "confidence": 0.9926074669929221,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00661.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00661.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.14358801394701004,
+            "confidence": 0.85641198605299,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00224.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00224.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 9.229534839505504e-06,
+            "confidence": 0.9999907704651605,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00039.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00039.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 6.477241731772665e-05,
+            "confidence": 0.9999352275826823,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00439.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00439.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.004009806216345169,
+            "confidence": 0.9959901937836548,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00452.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00452.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.00373079557903111,
+            "confidence": 0.9962692044209689,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00466.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00466.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.0004919520142721012,
+            "confidence": 0.9995080479857279,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00105.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00105.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.035512494810973294,
+            "confidence": 0.9644875051890267,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00266.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00266.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.0014704942586831748,
+            "confidence": 0.9985295057413168,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00254.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00254.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.0009616871539037675,
+            "confidence": 0.9990383128460962,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00125.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00125.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.08491121046245098,
+            "confidence": 0.915088789537549,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00248.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00248.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.00494438671739772,
+            "confidence": 0.9950556132826023,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00071.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00071.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.27805476635694504,
+            "confidence": 0.721945233643055,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00573.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00573.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 4.009732651866216e-05,
+            "confidence": 0.9999599026734813,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00379.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00379.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.00010953495257126633,
+            "confidence": 0.9998904650474287,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00649.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00649.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.033814602298662066,
+            "confidence": 0.9661853977013379,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00312.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00312.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.00304190581664443,
+            "confidence": 0.9969580941833556,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00502.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00502.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.10352254577446729,
+            "confidence": 0.8964774542255327,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00436.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00436.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.0008714228461030871,
+            "confidence": 0.9991285771538969,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00322.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00322.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.0010342102614231408,
+            "confidence": 0.9989657897385769,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00041.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00041.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.003942850380553864,
+            "confidence": 0.9960571496194461,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00600.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00600.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.00012295312990318052,
+            "confidence": 0.9998770468700968,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00148.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00148.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.006934802746400237,
+            "confidence": 0.9930651972535998,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00565.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00565.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.007856957614421844,
+            "confidence": 0.9921430423855782,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00348.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00348.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.00021666573047696147,
+            "confidence": 0.999783334269523,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00547.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00547.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 1.0419058980914997e-05,
+            "confidence": 0.9999895809410191,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00639.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00639.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.00012707767746178433,
+            "confidence": 0.9998729223225382,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00187.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00187.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.045946741476655006,
+            "confidence": 0.954053258523345,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00117.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00117.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.000866091693751514,
+            "confidence": 0.9991339083062485,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00183.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00183.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 6.661441148025915e-05,
+            "confidence": 0.9999333855885197,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00250.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00250.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 2.5908409043040592e-05,
+            "confidence": 0.999974091590957,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00523.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00523.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.0963231585919857,
+            "confidence": 0.9036768414080143,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00620.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00620.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.00025229586753994226,
+            "confidence": 0.9997477041324601,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00347.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00347.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 1.8497497649150318e-06,
+            "confidence": 0.9999981502502351,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00314.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00314.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.0002319323320989497,
+            "confidence": 0.999768067667901,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00496.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00496.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.03899051062762737,
+            "confidence": 0.9610094893723726,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00409.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00409.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 1.6013806813930387e-07,
+            "confidence": 0.9999998398619319,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00388.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00388.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.04009175440296531,
+            "confidence": 0.9599082455970347,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00062.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00062.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.00023024619440548122,
+            "confidence": 0.9997697538055945,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00501.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00501.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 1.924552123000467e-06,
+            "confidence": 0.999998075447877,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00541.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00541.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 2.130029207592088e-05,
+            "confidence": 0.9999786997079241,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00097.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00097.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 4.307217477617087e-05,
+            "confidence": 0.9999569278252238,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00492.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00492.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.00013698643670068122,
+            "confidence": 0.9998630135632993,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00008.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00008.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.0005859955999767408,
+            "confidence": 0.9994140044000233,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00358.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00358.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.04059487767517567,
+            "confidence": 0.9594051223248243,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00047.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00047.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.015495779924094677,
+            "confidence": 0.9845042200759053,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00618.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00618.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.004353678959887475,
+            "confidence": 0.9956463210401125,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00267.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00267.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.03074306296184659,
+            "confidence": 0.9692569370381534,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00283.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\real\\00283.jpg",
+            "expected": "Real Face",
+            "predicted": "Real Face",
+            "probability": 0.0017341859638690948,
+            "confidence": 0.9982658140361309,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "0AVYBUQESM.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\0AVYBUQESM.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.995783656835556,
+            "confidence": 0.995783656835556,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "0D4B6RGA7G.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\0D4B6RGA7G.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9999971985816956,
+            "confidence": 0.9999971985816956,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "05G3OZ9FZD.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\05G3OZ9FZD.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.5462714657187462,
+            "confidence": 0.5462714657187462,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "03U07D9BB0.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\03U07D9BB0.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9999082684516907,
+            "confidence": 0.9999082684516907,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "0CD0KC6VON.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\0CD0KC6VON.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9996518790721893,
+            "confidence": 0.9996518790721893,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "09GH1ZKD6S.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\09GH1ZKD6S.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.998505175113678,
+            "confidence": 0.998505175113678,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "06ODZA5T65.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\06ODZA5T65.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9966332018375397,
+            "confidence": 0.9966332018375397,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "0CBHLGAMTY.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\0CBHLGAMTY.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9998131096363068,
+            "confidence": 0.9998131096363068,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "0891P9BU5M.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\0891P9BU5M.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9909529387950897,
+            "confidence": 0.9909529387950897,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "02UDY3RXJ0.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\02UDY3RXJ0.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9957820177078247,
+            "confidence": 0.9957820177078247,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "04MYGS5NF0.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\04MYGS5NF0.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9997727870941162,
+            "confidence": 0.9997727870941162,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "02BUIANKWL.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\02BUIANKWL.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9997971951961517,
+            "confidence": 0.9997971951961517,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "04A94Q6VQ0.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\04A94Q6VQ0.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9964647889137268,
+            "confidence": 0.9964647889137268,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "0ASBSSFKGW.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\0ASBSSFKGW.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9971498548984528,
+            "confidence": 0.9971498548984528,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "0AHQ0X8SDX.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\0AHQ0X8SDX.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9960809946060181,
+            "confidence": 0.9960809946060181,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "0CWK7BXJJE.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\0CWK7BXJJE.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9998569786548615,
+            "confidence": 0.9998569786548615,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "0B96142CXS.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\0B96142CXS.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9325018227100372,
+            "confidence": 0.9325018227100372,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "07TBD33EQ3.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\07TBD33EQ3.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9992713332176208,
+            "confidence": 0.9992713332176208,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "0DL2XH3QKK.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\0DL2XH3QKK.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.99770587682724,
+            "confidence": 0.99770587682724,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "078O1NV2D1.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\078O1NV2D1.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.65200574696064,
+            "confidence": 0.65200574696064,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "067FABD5SC.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\067FABD5SC.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9998784065246582,
+            "confidence": 0.9998784065246582,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "03UNY1M83X.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\03UNY1M83X.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9995846152305603,
+            "confidence": 0.9995846152305603,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "0CSC8SIMA9.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\0CSC8SIMA9.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.6158362776041031,
+            "confidence": 0.6158362776041031,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "09ZSAAI75J.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\09ZSAAI75J.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.997342437505722,
+            "confidence": 0.997342437505722,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "0DCB2Z1XCD.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\0DCB2Z1XCD.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9739372432231903,
+            "confidence": 0.9739372432231903,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "0179HQK52V.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\0179HQK52V.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9998617172241211,
+            "confidence": 0.9998617172241211,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00V8VPXL3V.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\00V8VPXL3V.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9739955961704254,
+            "confidence": 0.9739955961704254,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "01OQZLB87L.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\01OQZLB87L.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9959656298160553,
+            "confidence": 0.9959656298160553,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "02WNXR4DIV.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\02WNXR4DIV.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9996329545974731,
+            "confidence": 0.9996329545974731,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "02XZQCN0ND.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\02XZQCN0ND.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9994295537471771,
+            "confidence": 0.9994295537471771,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "0D6U5NA2O8.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\0D6U5NA2O8.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9979230165481567,
+            "confidence": 0.9979230165481567,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "012N2T4FKG.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\012N2T4FKG.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9981996119022369,
+            "confidence": 0.9981996119022369,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "06KKV817U9.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\06KKV817U9.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9829761385917664,
+            "confidence": 0.9829761385917664,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "06CU6Z7NWL.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\06CU6Z7NWL.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9927693903446198,
+            "confidence": 0.9927693903446198,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "08GW9GDUQ8.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\08GW9GDUQ8.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9999021887779236,
+            "confidence": 0.9999021887779236,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "04I4W4UOEA.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\04I4W4UOEA.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9999692440032959,
+            "confidence": 0.9999692440032959,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "007SMMOPYB.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\007SMMOPYB.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9985498487949371,
+            "confidence": 0.9985498487949371,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "05ODLI0Q5L.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\05ODLI0Q5L.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9792043268680573,
+            "confidence": 0.9792043268680573,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "0C1ILMRZGO.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\0C1ILMRZGO.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9458367824554443,
+            "confidence": 0.9458367824554443,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00W5NPIX4S.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\00W5NPIX4S.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9977506697177887,
+            "confidence": 0.9977506697177887,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "09D4J3DUOK.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\09D4J3DUOK.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.981292188167572,
+            "confidence": 0.981292188167572,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "087601AIMM.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\087601AIMM.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9999740123748779,
+            "confidence": 0.9999740123748779,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "04RMHY3P09.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\04RMHY3P09.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.6035431027412415,
+            "confidence": 0.6035431027412415,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "0A99RJG89D.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\0A99RJG89D.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9997609853744507,
+            "confidence": 0.9997609853744507,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "0BLEWXE84W.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\0BLEWXE84W.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9990583062171936,
+            "confidence": 0.9990583062171936,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "0ADCRFPGE7.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\0ADCRFPGE7.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9960339665412903,
+            "confidence": 0.9960339665412903,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "05IO1MPW4D.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\05IO1MPW4D.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9794962406158447,
+            "confidence": 0.9794962406158447,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "02YW5GZPFO.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\02YW5GZPFO.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.99992436170578,
+            "confidence": 0.99992436170578,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "08JRZLQHAA.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\08JRZLQHAA.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.8758538067340851,
+            "confidence": 0.8758538067340851,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "0D2PDYHR60.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\0D2PDYHR60.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9995395541191101,
+            "confidence": 0.9995395541191101,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "0DL5EVAEK0.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\0DL5EVAEK0.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9953486025333405,
+            "confidence": 0.9953486025333405,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "016SOBIEG7.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\016SOBIEG7.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9702233672142029,
+            "confidence": 0.9702233672142029,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "03W1TOXADG.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\03W1TOXADG.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9996809661388397,
+            "confidence": 0.9996809661388397,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00483R5CC4.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\00483R5CC4.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.8276810944080353,
+            "confidence": 0.8276810944080353,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "02ALRVUDUP.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\02ALRVUDUP.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.5159912258386612,
+            "confidence": 0.5159912258386612,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "09TC79T3D3.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\09TC79T3D3.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9039070010185242,
+            "confidence": 0.9039070010185242,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "0C3QZTDKWU.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\0C3QZTDKWU.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9987940192222595,
+            "confidence": 0.9987940192222595,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "05UIJFKAYL.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\05UIJFKAYL.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9809918999671936,
+            "confidence": 0.9809918999671936,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "0B6QYMDC30.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\0B6QYMDC30.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9950834810733795,
+            "confidence": 0.9950834810733795,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "0DYDJOWNK3.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\0DYDJOWNK3.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9947762489318848,
+            "confidence": 0.9947762489318848,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "0CNT5RJYX9.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\0CNT5RJYX9.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9997111558914185,
+            "confidence": 0.9997111558914185,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "05K9W3BMWJ.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\05K9W3BMWJ.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9976779818534851,
+            "confidence": 0.9976779818534851,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "01BEBDIRC8.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\01BEBDIRC8.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9982815384864807,
+            "confidence": 0.9982815384864807,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "013O4R3GO3.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\013O4R3GO3.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9995133578777313,
+            "confidence": 0.9995133578777313,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "036PU7OT48.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\036PU7OT48.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.999293714761734,
+            "confidence": 0.999293714761734,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "0DZCHVGP9M.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\0DZCHVGP9M.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9990637302398682,
+            "confidence": 0.9990637302398682,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "0CFUGK3CWS.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\0CFUGK3CWS.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9997482895851135,
+            "confidence": 0.9997482895851135,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "09016K5TIO.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\09016K5TIO.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9981012642383575,
+            "confidence": 0.9981012642383575,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "0AQNH0YC0V.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\0AQNH0YC0V.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9978746771812439,
+            "confidence": 0.9978746771812439,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "023TT8SISF.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\023TT8SISF.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9101769328117371,
+            "confidence": 0.9101769328117371,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "05AKW3JBP1.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\05AKW3JBP1.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9991900324821472,
+            "confidence": 0.9991900324821472,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00BYVMEI3I.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\00BYVMEI3I.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9987670481204987,
+            "confidence": 0.9987670481204987,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "0BGX87241F.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\0BGX87241F.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9957843124866486,
+            "confidence": 0.9957843124866486,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "03IX8LX2Q7.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\03IX8LX2Q7.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9992330372333527,
+            "confidence": 0.9992330372333527,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "03G1475ZA7.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\03G1475ZA7.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9997599124908447,
+            "confidence": 0.9997599124908447,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "058IYT8ZZE.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\058IYT8ZZE.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9995242953300476,
+            "confidence": 0.9995242953300476,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "0C1LLBFNTO.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\0C1LLBFNTO.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9995867013931274,
+            "confidence": 0.9995867013931274,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "0BEH55VAY0.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\0BEH55VAY0.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9999756217002869,
+            "confidence": 0.9999756217002869,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "04Z8GI97UJ.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\04Z8GI97UJ.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9748281240463257,
+            "confidence": 0.9748281240463257,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "008Y48BIX8.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\008Y48BIX8.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9951755404472351,
+            "confidence": 0.9951755404472351,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "05BJ0IDDS8.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\05BJ0IDDS8.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9990685880184174,
+            "confidence": 0.9990685880184174,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "048ZO17F5M.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\048ZO17F5M.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9877505004405975,
+            "confidence": 0.9877505004405975,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "0CRWKIPBCX.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\0CRWKIPBCX.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9985696375370026,
+            "confidence": 0.9985696375370026,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00GN2JWV43.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\00GN2JWV43.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.928620457649231,
+            "confidence": 0.928620457649231,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "062U7MAFP7.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\062U7MAFP7.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.999701738357544,
+            "confidence": 0.999701738357544,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "07GRG7AXBM.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\07GRG7AXBM.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9994498789310455,
+            "confidence": 0.9994498789310455,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "0CKLY2MZDK.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\0CKLY2MZDK.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9989197254180908,
+            "confidence": 0.9989197254180908,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "0DZCOLT329.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\0DZCOLT329.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9939102232456207,
+            "confidence": 0.9939102232456207,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "07YTY7XKZW.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\07YTY7XKZW.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9926518797874451,
+            "confidence": 0.9926518797874451,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "0APCJNS8FF.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\0APCJNS8FF.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9996148943901062,
+            "confidence": 0.9996148943901062,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "07S8F6W5ZT.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\07S8F6W5ZT.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.8307937979698181,
+            "confidence": 0.8307937979698181,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "0350UVLFF4.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\0350UVLFF4.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9987971484661102,
+            "confidence": 0.9987971484661102,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "03D9RYN433.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\03D9RYN433.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9596563577651978,
+            "confidence": 0.9596563577651978,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "059D5BCDKO.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\059D5BCDKO.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9303824603557587,
+            "confidence": 0.9303824603557587,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "00JMWC4S8R.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\00JMWC4S8R.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9895232617855072,
+            "confidence": 0.9895232617855072,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "0BPAESC4F7.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\0BPAESC4F7.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9931911528110504,
+            "confidence": 0.9931911528110504,
+            "passed": true,
+            "source": "Validation Dataset"
+        },
+        {
+            "name": "06A15B1TUD.jpg",
+            "filepath": "data/deepfake_extracted/real_vs_fake/real-vs-fake/valid\\fake\\06A15B1TUD.jpg",
+            "expected": "Deepfake Face",
+            "predicted": "Deepfake Face",
+            "probability": 0.9969434440135956,
+            "confidence": 0.9969434440135956,
+            "passed": true,
+            "source": "Validation Dataset"
+        }
+    ]
+}

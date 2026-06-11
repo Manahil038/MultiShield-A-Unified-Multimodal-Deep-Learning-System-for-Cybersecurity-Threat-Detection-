@@ -1,0 +1,28 @@
+NOTE: The Network Traffic Scanner in the UI does not accept file uploads. Instead, you customize parameters via sliders. 
+Use these values to manually trigger the detections for your presentation.
+
+=== SAFE CONNECTION ===
+Protocol: TCP
+Service: SSH
+State: FIN
+Connection Duration: 15.28 seconds
+Packets Per Second: 85
+Data Sent (Bytes): 48,776 B
+Data Received (Bytes): 85,554 B
+Data Speed Sent (bps): 25,494 bps
+Data Speed Received (bps): 44,724 bps
+Source TTL: 31
+Dest TTL: 29
+
+=== DDOS ATTACK ANOMALY ===
+Protocol: OSPF
+Service: - (None)
+State: REQ
+Connection Duration: 58.06 seconds
+Packets Per Second: 0
+Data Sent (Bytes): 5,616 B
+Data Received (Bytes): 0 B
+Data Speed Sent (bps): 758 bps
+Data Speed Received (bps): 0 bps
+Source TTL: 254
+Dest TTL: 0

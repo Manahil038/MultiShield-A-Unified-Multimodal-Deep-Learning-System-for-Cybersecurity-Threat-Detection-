@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software in your research or project work, please cite it as below."
+authors:
+  - family-names: "Ahmed"
+    given-names: "Hanzala"
+  - family-names: "Fatima"
+    given-names: "Manahil"
+  - family-names: "Ahmad"
+    given-names: "Uzair"
+title: "MultiShield: A Unified Multimodal Deep Learning System for Cybersecurity Threat Detection"
+version: 1.0.0
+date-released: 2026-06-07
+url: "https://github.com/Manahil038/MultiShield-A-Unified-Multimodal-Deep-Learning-System-for-Cybersecurity-Threat-Detection-"

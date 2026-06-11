@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiShield - Neural Cybersecurity Intelligence Core</title>
+    <meta name="description" content="Stop AI threats with mathematical certainty. MultiShield's local deep learning classifiers block network, text, and deepfake threats in real time.">
+    
+    <!-- Modern Premium Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- GSAP, Lenis & Three.js CDN libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css?v=14.0">
+</head>
+<body>
+
+    <!-- Lucien Custom Preloader Screen -->
+    <div class="home-preloader">
+        <div class="loading-container">
+            <div class="loading-screen">
+                <div class="loading__logo">
+                    <svg class="brand-logo-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    </svg>
+                    <span class="loading__logo-text">MULTISHIELD</span>
+                </div>
+                <div class="loading__progress">
+                    <div class="loading__progress-inner"></div>
+                </div>
+                <div class="loading__content">
+                    <div class="text-style-mono">System Core: PyTorch Active</div>
+                    <div class="text-style-mono">Loading Neural Layer Contexts</div>
+                    <div class="loading__numbers">
+                        <div class="loading__number-group is--first">
+                            <div class="loading__number-wrap">
+                                <span class="loading__number">1</span>
+                            </div>
+                        </div>
+                        <div class="loading__number-group is--second">
+                            <div class="loading__number-wrap">
+                                <span class="loading__number">1</span>
+                                <span class="loading__number">2</span>
+                                <span class="loading__number">3</span>
+                                <span class="loading__number">4</span>
+                                <span class="loading__number">5</span>
+                                <span class="loading__number">6</span>
+                                <span class="loading__number">7</span>
+                                <span class="loading__number">8</span>
+                                <span class="loading__number">9</span>
+                                <span class="loading__number">0</span>
+                            </div>
+                        </div>
+                        <div class="loading__number-group is--third">
+                            <div class="loading__number-wrap">
+                                <span class="loading__number">1</span>
+                                <span class="loading__number">2</span>
+                                <span class="loading__number">3</span>
+                                <span class="loading__number">4</span>
+                                <span class="loading__number">5</span>
+                                <span class="loading__number">6</span>
+                                <span class="loading__number">7</span>
+                                <span class="loading__number">8</span>
+                                <span class="loading__number">9</span>
+                                <span class="loading__number">0</span>
+                            </div>
+                        </div>
+                        <div class="loading__percentage-wrap">
+                            <span class="loading__percentage">%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Transparent Zero-Trust Navbar Header -->
+    <div data-nav-status="closed" data-nav-wrapper="" class="nav_wrapper">
+        <header class="nav">
+            <div class="nav_inner">
+                <a href="#overview" class="nav_brand w-inline-block">
+                    <div class="nav_logo">
+                        <svg class="brand-logo-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                        <span class="nav_logo-text-full">MULTISHIELD</span>
+                        <span class="nav_logo-text-short">M//S</span>
+                    </div>
+                </a>
+                
+                <nav data-nav-menu="" class="nav_menu">
+                    <ul class="nav_menu-ul">
+                        <li class="nav_menu-li">
+                            <a data-nav-link="" href="#overview" class="nav-link w-inline-block">
+                                <span class="nav-link_span">Overview</span>
+                            </a>
+                        </li>
+                        <li class="nav_menu-li">
+                            <a data-nav-link="" href="#mission" class="nav-link w-inline-block">
+                                <span class="nav-link_span">Our Mission</span>
+                            </a>
+                        </li>
+                        <li class="nav_menu-li">
+                            <a data-nav-link="" href="#demo" class="nav-link w-inline-block">
+                                <span class="nav-link_span">Live Preview</span>
+                            </a>
+                        </li>
+                        <li class="nav_menu-li">
+                            <a data-nav-link="" href="#scanners" class="nav-link w-inline-block">
+                                <span class="nav-link_span">Threat Scanner</span>
+                            </a>
+                        </li>
+                        <li class="nav_menu-li">
+                            <a data-nav-link="" href="#logs-terminal" class="nav-link w-inline-block">
+                                <span class="nav-link_span">Activity Logs</span>
+                            </a>
+                        </li>
+                         <li class="nav_menu-li">
+                             <a data-nav-link="" href="https://github.com/Manahil038/MultiShield-A-Unified-Multimodal-Deep-Learning-System-for-Cybersecurity-Threat-Detection-" target="_blank" class="nav-link w-inline-block">
+                                 <span class="nav-link_span">GitHub</span>
+                             </a>
+                         </li>
+                    </ul>
+                </nav>
+
+                <div class="nav_controls">
+                    <div class="nav_monitors hide-tablet">
+                        <div class="nav_monitor-pill">
+                            <span class="status-indicator-dot dot-green" id="health-indicator-dot"></span>
+                            <span class="nav_monitor-val text-style-mono" id="device-pill">CUDA:0</span>
+                        </div>
+                        <div class="nav_monitor-pill">
+                            <span class="nav_monitor-lbl">LATENCY:</span>
+                            <span class="nav_monitor-val text-style-mono" id="ping-latency">0ms</span>
+                        </div>
+                    </div>
+                    
+                    <button type="button" class="button" onclick="document.getElementById('scanners').scrollIntoView({behavior: 'smooth'})">
+                        Initialize Scans
+                    </button>
+
+                    <button aria-label="Menu button" data-nav-button="toggle" class="nav_button show-tablet">
+                        <div class="nav_button_wrap">
+                            <div class="nav_button_line"></div>
+                            <div class="nav_button_line"></div>
+                            <div class="nav_button_line"></div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div data-nav-bg-trigger="" class="nav_bg"></div>
+        </header>
+        <div aria-hidden="true" data-nav-button="close" class="nav_overlay"></div>
+    </div>
+
+    <!-- Main Scroll Page Wrapper -->
+    <main class="main-wrapper">
+        
+        <!-- Hero Section -->
+        <section class="section_home-hero" id="overview">
+            <div class="padding-global">
+                <div class="container-large">
+                    <div class="home-hero_component">
+                        <div class="home-hero_heading-wrap">
+                            <h1 class="heading_component" scramble-words-hero="">
+                                <div class="heading_text">MultiShield</div>
+                            </h1>
+                            <div class="heading_component is-absolute">
+                                <div class="linear-wipe heading-style-h1">MultiShield</div>
+                            </div>
+                        </div>
+                        
+                        <div class="home-hero_content-heading">
+                            <h2 class="hero-subheading">
+                                A Unified Multimodal Deep Learning System for Cybersecurity Threat Detection
+                            </h2>
+                            <p class="hero-description-text">
+                                An advanced threat defense system that uses local AI models to scan network traffic, verify news articles, block phishing emails, and detect deepfake faces instantly.
+                            </p>
+                            
+                            <div class="home-hero_scroll-wrapper">
+                                <div class="scroll-progress_wrapper">
+                                    <div class="scroll-progress_component">
+                                        <div class="scroll-progress_bar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="home-hero_decoration">
+                                <div class="home-hero_decoration-text">
+                                    <div class="paragraph_component text-style-mono"><p>Network Traffic Analyzer</p></div>
+                                    <div class="paragraph_component text-style-mono"><p>Instant Local Scan</p></div>
+                                    <div class="paragraph_component text-style-mono"><p>Text Pattern Scanner</p></div>
+                                    <div class="paragraph_component text-style-mono"><p>Deepfake Face Scanner</p></div>
+                                    <div class="paragraph_component text-style-mono"><p>Secure & Private</p></div>
+                                </div>
+                                <div class="home-hero_decoration-icon">
+                                    <svg viewBox="0 0 16 16" fill="none" class="icon-1x1-small"><path d="M2 8L5.5 11.5L6.207 10.793L3.914 8.5L14 8.5L14 7.5L3.914 7.5L6.207 5.207L5.5 4.5L2 8Z" fill="currentColor"></path></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="home-hero_background">
+                <canvas id="hero-3d-canvas"></canvas>
+                <div class="grid-backdrop-overlay"></div>
+                <div class="background-transition is-bottom"></div>
+            </div>
+        </section>
+
+        <!-- Framework Logo Marquee Section -->
+        <section class="section_logo-marquee">
+            <div class="padding-global">
+                <div class="container-large">
+                    <div class="logo-marquee_component">
+                        <div class="logo-marquee_heading">
+                            <h2 class="text-size-xsmall text-style-mono">Threat Defense Frameworks —</h2>
+                        </div>
+                        <div data-css-marquee="" class="logo-marquee">
+                            <div data-css-marquee-list="" class="logo-marquee_list">
+                                <div class="logo-marquee_item"><span>NETWORK ATTACK PREVENTION</span></div>
+                                <div class="logo-marquee_item"><span>AI FAKE NEWS FILTER</span></div>
+                                <div class="logo-marquee_item"><span>PHISHING EMAIL SCANNER</span></div>
+                                <div class="logo-marquee_item"><span>DEEPFAKE FACE VERIFIER</span></div>
+                                <div class="logo-marquee_item"><span>HIGH-SPEED LOCAL SCANNING</span></div>
+                                <div class="logo-marquee_item"><span>ZERO-TRUST PRIVACY SHIELD</span></div>
+                            </div>
+                            <div data-css-marquee-list="" class="logo-marquee_list">
+                                <div class="logo-marquee_item"><span>NETWORK ATTACK PREVENTION</span></div>
+                                <div class="logo-marquee_item"><span>AI FAKE NEWS FILTER</span></div>
+                                <div class="logo-marquee_item"><span>PHISHING EMAIL SCANNER</span></div>
+                                <div class="logo-marquee_item"><span>DEEPFAKE FACE VERIFIER</span></div>
+                                <div class="logo-marquee_item"><span>HIGH-SPEED LOCAL SCANNING</span></div>
+                                <div class="logo-marquee_item"><span>ZERO-TRUST PRIVACY SHIELD</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Mission Section -->
+        <section class="section_slot" id="mission">
+            <div class="padding-global">
+                <div class="container-large">
+                    <div class="slot_component">
+                        <div data-animate-heading="component" style="max-width: 110ch;" class="section-heading">
+                            <h2 data-animate-heading="eyebrow" class="section-heading_eyebrow">The Mission</h2>
+                            <div data-animate-heading="child" class="section-heading_dash"></div>
+                            <h3 text-animate="scramble-words" class="heading_component heading-style-h2">
+                                <div class="heading_text">Protect your network and media with smart local AI. MultiShield instantly detects and blocks hidden threats before they can cause damage.</div>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Dynamic Side-Scrolling Card Section -->
+        <section class="horizontal-cards_component" id="problems">
+            <div class="horizontal-cards_height">
+                <div class="horizontal-cards_sticky">
+                    <div class="padding-global">
+                        <div class="container-large">
+                            <div class="section-heading">
+                                <h2 class="section-heading_eyebrow">Threat Vectors</h2>
+                                <div class="section-heading_dash"></div>
+                                <h3 class="heading_component heading-style-h4">Why standard firewall layers miss neural cybersecurity risks</h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="horizontal-cards_track-wrapper">
+                        <div class="horizontal-cards_track">
+                            <div class="horizontal-cards_list">
+                                
+                                <!-- Card 01 -->
+                                <div class="horizontal-card">
+                                    <div class="horizontal-card_inner">
+                                        <div class="horizontal-card_content">
+                                            <div class="card-num text-style-mono">01</div>
+                                            <h4 class="heading_component heading-style-h7 text-color-secondary">Network Attacks</h4>
+                                            <p class="paragraph_component">Blocks malicious traffic floods (like DDoS attacks) designed to overwhelm and shut down your servers.</p>
+                                        </div>
+                                        <div class="card-bg-gradient color-net"></div>
+                                    </div>
+                                </div>
+
+                                <!-- Card 02 -->
+                                <div class="horizontal-card">
+                                    <div class="horizontal-card_inner">
+                                        <div class="horizontal-card_content">
+                                            <div class="card-num text-style-mono">02</div>
+                                            <h4 class="heading_component heading-style-h7 text-color-secondary">Fake News & Lies</h4>
+                                            <p class="paragraph_component">Identifies AI-generated fake news and sensational lies spread online before they deceive users.</p>
+                                        </div>
+                                        <div class="card-bg-gradient color-news"></div>
+                                    </div>
+                                </div>
+
+                                <!-- Card 03 -->
+                                <div class="horizontal-card">
+                                    <div class="horizontal-card_inner">
+                                        <div class="horizontal-card_content">
+                                            <div class="card-num text-style-mono">03</div>
+                                            <h4 class="heading_component heading-style-h7 text-color-secondary">Email Phishing & Scams</h4>
+                                            <p class="paragraph_component">Flags urgent email scams that try to steal your passwords and sensitive information by creating false urgency.</p>
+                                        </div>
+                                        <div class="card-bg-gradient color-phish"></div>
+                                    </div>
+                                </div>
+
+                                <!-- Card 04 -->
+                                <div class="horizontal-card">
+                                    <div class="horizontal-card_inner">
+                                        <div class="horizontal-card_content">
+                                            <div class="card-num text-style-mono">04</div>
+                                            <h4 class="heading_component heading-style-h7 text-color-secondary">Deepfakes & AI Faces</h4>
+                                            <p class="paragraph_component">Exposes AI-generated fake face photos (deepfakes) used to spoof identities or create fake accounts.</p>
+                                        </div>
+                                        <div class="card-bg-gradient color-media"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solution & 3up Feature blocks -->
+        <section class="section_slot" id="solution">
+            <div class="padding-global">
+                <div class="container-large">
+                    <div class="slot_component">
+                        <div data-animate-heading="component" class="section-heading" data-reveal>
+                            <h2 data-animate-heading="eyebrow" class="section-heading_eyebrow">The Solution</h2>
+                            <div data-animate-heading="child" class="section-heading_dash"></div>
+                            <h3 class="heading_component heading-style-h4">Private & local threat scanner for complete peace of mind</h3>
+                            <p class="section-heading_paragraph text-size-medium">MultiShield runs directly on your computer. It checks network traffic, documents, and face photos for security threats instantly, without sending any of your private files or details to the cloud.</p>
+                        </div>
+                        
+                        <div class="component-3up">
+                            <div class="component-3up_grid" data-reveal-stagger>
+                                
+                                <div class="icon-card">
+                                    <div class="icon-card_inner">
+                                        <div class="scanner-icon icon-net z-index-2" style="margin-bottom:1.5rem;">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                        </div>
+                                        <h4 class="heading_component heading-style-h7 text-color-secondary z-index-2">Smart AI Decisions</h4>
+                                        <p class="paragraph_component z-index-2">Instead of simple keyword matching, MultiShield uses highly trained deep learning models to check structural patterns in files and traffic for malicious traits.</p>
+                                    </div>
+                                </div>
+
+                                <div class="icon-card">
+                                    <div class="icon-card_inner">
+                                        <div class="scanner-icon icon-news z-index-2" style="margin-bottom:1.5rem;">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                                        </div>
+                                        <h4 class="heading_component heading-style-h7 text-color-secondary z-index-2">Total Data Privacy</h4>
+                                        <p class="paragraph_component z-index-2">All checks run directly on your CPU or GPU. Your private network activity, emails, and images are never uploaded to any remote server.</p>
+                                    </div>
+                                </div>
+
+                                <div class="icon-card">
+                                    <div class="icon-card_inner">
+                                        <div class="scanner-icon icon-media z-index-2" style="margin-bottom:1.5rem;">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                                        </div>
+                                        <h4 class="heading_component heading-style-h7 text-color-secondary z-index-2">Instant Scan Results</h4>
+                                        <p class="paragraph_component z-index-2">Scans and verifies files in under 15 milliseconds. It runs smoothly in the background without causing internet lag or computer slowdown.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Interface Demo Section -->
+        <section class="section_slot section_demo" id="demo">
+            <div class="padding-global">
+                <div class="container-large">
+                    <div class="section-heading" data-reveal>
+                        <h2 class="section-heading_eyebrow">Live Interface</h2>
+                        <div class="section-heading_dash"></div>
+                        <h3 class="heading_component heading-style-h4">See MultiShield in operation</h3>
+                        <p class="section-heading_paragraph text-size-medium">All scanning runs instantly and privately on your computer. Zero cloud data sharing. Watch the live logs below to see the AI in action.</p>
+                    </div>
+
+                    <div class="demo-browser-wrap" data-reveal>
+                        <div class="demo-browser">
+                            <div class="demo-browser_chrome">
+                                <div class="demo-chrome-dots">
+                                    <span class="dot-red-chrome"></span>
+                                    <span class="dot-yellow-chrome"></span>
+                                    <span class="dot-green-chrome"></span>
+                                </div>
+                                <div class="demo-chrome-url">
+                                    <span>&#128274;</span>
+                                    <span>localhost:8088 &mdash; MultiShield Zero-Trust Portal</span>
+                                </div>
+                            </div>
+                            <div class="demo-browser_content">
+                                <div class="demo-terminal-header">
+                                    <span style="color:var(--accent-indigo);">&#62;</span>
+                                    LIVE SECURITY ACTIVITY LOGS
+                                    <span class="demo-port-badge">PORT: 8088</span>
+                                </div>
+                                <div class="demo-terminal-body" id="demo-terminal-body"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="demo-stats" data-reveal-stagger>
+                        <div class="stat-pill">
+                            <div class="stat-top">
+                                <span class="stat-num" data-count="14">0</span><span class="stat-unit">ms</span>
+                            </div>
+                            <span class="stat-label">Max Scan Time</span>
+                        </div>
+                        <div class="stat-pill">
+                            <div class="stat-top">
+                                <span class="stat-num" data-count="4">0</span><span class="stat-unit">&times;</span>
+                            </div>
+                            <span class="stat-label">AI Scanner Models</span>
+                        </div>
+                        <div class="stat-pill">
+                            <div class="stat-top">
+                                <span class="stat-num" data-count="100">0</span><span class="stat-unit">%</span>
+                            </div>
+                            <span class="stat-label">Local Scan Rate</span>
+                        </div>
+                        <div class="stat-pill">
+                            <div class="stat-top">
+                                <span class="stat-num" data-count="0">0</span><span class="stat-unit">GB</span>
+                            </div>
+                            <span class="stat-label">Data Shared with Cloud</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_slot" id="how-it-works">
+            <div class="padding-global">
+                <div class="container-large">
+                    <div class="section-how_component">
+                        <div class="section-how_sticky">
+                            <div class="section-how_content">
+                                <div class="section-how_text">
+                                    <div class="section-how_text-wrapper" data-step="1">
+                                        <h4 class="heading_component heading-style-h7">01 // Network Traffic Filter</h4>
+                                        <p class="text-style-mono text-color-muted">Scans incoming network connections to detect and block server flood attacks.</p>
+                                    </div>
+                                    <div class="section-how_text-wrapper" data-step="2">
+                                        <h4 class="heading_component heading-style-h7">02 // Text Integrity Scanner</h4>
+                                        <p class="text-style-mono text-color-muted">Analyzes news headlines and articles to see if they are trustworthy or fabricated.</p>
+                                    </div>
+                                    <div class="section-how_text-wrapper" data-step="3">
+                                        <h4 class="heading_component heading-style-h7">03 // Email Scam Detector</h4>
+                                        <p class="text-style-mono text-color-muted">Inspects email content for urgent warnings, suspicious links, and credentials scams.</p>
+                                    </div>
+                                    <div class="section-how_text-wrapper" data-step="4">
+                                        <h4 class="heading_component heading-style-h7">04 // Deepfake Face Scanner</h4>
+                                        <p class="text-style-mono text-color-muted">Checks photos for tiny pixel patterns and lighting glitches typical of AI-generated faces.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- High-Tech Dynamic Threat Shield HUD Visualizer -->
+                            <div class="section-how_visual">
+                                <div class="visualizer-overlay-frame">
+                                    <div class="visualizer-hud-header">
+                                        <span class="hud-status-tag">INTELLIGENCE TARGETING SYSTEM</span>
+                                        <span class="hud-ip-val text-style-mono">SHIELD NODE // SECURE</span>
+                                    </div>
+                                    <div class="visualizer-grid-lines"></div>
+                                </div>
+
+                                <!-- Panel 1: Network Traffic Defender -->
+                                <div class="visualizer-panel active" id="visual-panel-1">
+                                    <div class="cinematic-panel color-net" style="--panel-delay: 0s;">
+                                        <img src="images/panel_net.png" class="cinematic-bg-img" alt="Network Defense">
+                                        <div class="cinematic-overlay"></div>
+                                        <div class="targeting-ui">
+                                            <div class="target-corner top-left"></div>
+                                            <div class="target-corner top-right"></div>
+                                            <div class="target-corner bottom-left"></div>
+                                            <div class="target-corner bottom-right"></div>
+                                            <div class="target-reticle">
+                                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <circle cx="12" cy="12" r="3"></circle>
+                                                    <line x1="12" y1="2" x2="12" y2="6"></line>
+                                                    <line x1="12" y1="18" x2="12" y2="22"></line>
+                                                    <line x1="2" y1="12" x2="6" y2="12"></line>
+                                                    <line x1="18" y1="12" x2="22" y2="12"></line>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hud-stats-overlay">
+                                        <span class="hud-stat-lbl">THREAT MATRIX:</span>
+                                        <span class="hud-stat-val text-style-mono text-color-net">DDoS FLOOD BLOCKED</span>
+                                    </div>
+                                </div>
+
+                                <!-- Panel 2: Fake News Defender -->
+                                <div class="visualizer-panel" id="visual-panel-2">
+                                    <div class="cinematic-panel color-news" style="--panel-delay: 1s;">
+                                        <img src="images/panel_news.png" class="cinematic-bg-img" alt="Fake News Analysis">
+                                        <div class="cinematic-overlay"></div>
+                                        <div class="targeting-ui">
+                                            <div class="target-corner top-left"></div>
+                                            <div class="target-corner top-right"></div>
+                                            <div class="target-corner bottom-left"></div>
+                                            <div class="target-corner bottom-right"></div>
+                                            <div class="target-reticle">
+                                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <circle cx="12" cy="12" r="3"></circle>
+                                                    <line x1="12" y1="2" x2="12" y2="6"></line>
+                                                    <line x1="12" y1="18" x2="12" y2="22"></line>
+                                                    <line x1="2" y1="12" x2="6" y2="12"></line>
+                                                    <line x1="18" y1="12" x2="22" y2="12"></line>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hud-stats-overlay">
+                                        <span class="hud-stat-lbl">VERDICT VERIFY:</span>
+                                        <span class="hud-stat-val text-style-mono text-color-news">DISINFORMATION REJECTED</span>
+                                    </div>
+                                </div>
+
+                                <!-- Panel 3: Phishing Email Defender -->
+                                <div class="visualizer-panel" id="visual-panel-3">
+                                    <div class="cinematic-panel color-phish" style="--panel-delay: 2s;">
+                                        <img src="images/panel_phish.png" class="cinematic-bg-img" alt="Phishing Email Sandbox">
+                                        <div class="cinematic-overlay"></div>
+                                        <div class="targeting-ui">
+                                            <div class="target-corner top-left"></div>
+                                            <div class="target-corner top-right"></div>
+                                            <div class="target-corner bottom-left"></div>
+                                            <div class="target-corner bottom-right"></div>
+                                            <div class="target-reticle">
+                                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <circle cx="12" cy="12" r="3"></circle>
+                                                    <line x1="12" y1="2" x2="12" y2="6"></line>
+                                                    <line x1="12" y1="18" x2="12" y2="22"></line>
+                                                    <line x1="2" y1="12" x2="6" y2="12"></line>
+                                                    <line x1="18" y1="12" x2="22" y2="12"></line>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hud-stats-overlay">
+                                        <span class="hud-stat-lbl">SANDBOX DETECT:</span>
+                                        <span class="hud-stat-val text-style-mono text-color-phish">PHISHING ATTEMPT BLOCKED</span>
+                                    </div>
+                                </div>
+
+                                <!-- Panel 4: Deepfake Media Defender -->
+                                <div class="visualizer-panel" id="visual-panel-4">
+                                    <div class="cinematic-panel color-media" style="--panel-delay: 3s;">
+                                        <img src="images/panel_media.png" class="cinematic-bg-img" alt="Deepfake Media Analysis">
+                                        <div class="cinematic-overlay"></div>
+                                        <div class="targeting-ui">
+                                            <div class="target-corner top-left"></div>
+                                            <div class="target-corner top-right"></div>
+                                            <div class="target-corner bottom-left"></div>
+                                            <div class="target-corner bottom-right"></div>
+                                            <div class="target-reticle">
+                                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <circle cx="12" cy="12" r="3"></circle>
+                                                    <line x1="12" y1="2" x2="12" y2="6"></line>
+                                                    <line x1="12" y1="18" x2="12" y2="22"></line>
+                                                    <line x1="2" y1="12" x2="6" y2="12"></line>
+                                                    <line x1="18" y1="12" x2="22" y2="12"></line>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hud-stats-overlay">
+                                        <span class="hud-stat-lbl">MEDIA ANALYSIS:</span>
+                                        <span class="hud-stat-val text-style-mono text-color-media">DEEPFAKE MEDIA REJECTED</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Operational Telemetry Table with Tooltips (Lucien-like) -->
+        <section class="section_slot" id="transformation">
+            <div class="padding-global">
+                <div class="container-large">
+                    <div class="section-heading">
+                        <h2 class="section-heading_eyebrow">Interactive Security Settings & Metrics</h2>
+                        <div class="section-heading_dash"></div>
+                        <h3 class="heading_component heading-style-h4">Explore how each AI scanner works behind the scenes</h3>
+                    </div>
+
+                    <div class="transformation-table_component">
+                        <!-- Custom layout representing active telemetry spreadsheet -->
+                        <div class="telemetry-table-wrapper">
+                            <div class="telemetry-table-header">
+                                <span class="text-style-mono">Active AI Model Scanner Details</span>
+                                <div class="pulse-beacon"></div>
+                            </div>
+                            <div class="telemetry-grid">
+                                <div class="grid-item head">SCANNER TYPE</div>
+                                <div class="grid-item head">AI MODEL METHOD</div>
+                                <div class="grid-item head">TRAINED ON</div>
+                                <div class="grid-item head">CHECK METHOD</div>
+                                <div class="grid-item head">SCAN TIME</div>
+                                
+                                <div class="grid-item font-mono">01 // NETWORK CONNECTION</div>
+                                <div class="grid-item">Multi-Layer Network AI</div>
+                                <div class="grid-item">Network Attack Records</div>
+                                <div class="grid-item">Traffic volume analysis</div>
+                                <div class="grid-item text-style-mono color-net">under 1.5ms</div>
+                                
+                                <div class="grid-item font-mono">02 // FAKE NEWS DETECTOR</div>
+                                <div class="grid-item">Text Pattern AI</div>
+                                <div class="grid-item">Verified News Records</div>
+                                <div class="grid-item">First 256 words scan</div>
+                                <div class="grid-item text-style-mono color-news">under 8.2ms</div>
+                                
+                                <div class="grid-item font-mono">03 // EMAIL SCAM DETECTOR</div>
+                                <div class="grid-item">Text Pattern AI</div>
+                                <div class="grid-item">Verified Spam & Scam Records</div>
+                                <div class="grid-item">Filter common spam words</div>
+                                <div class="grid-item text-style-mono color-phish">under 7.8ms</div>
+                                
+                                <div class="grid-item font-mono">04 // DEEPFAKE PHOTO SCANNER</div>
+                                <div class="grid-item">Face Image Scanner AI</div>
+                                <div class="grid-item">AI Face Generation Records</div>
+                                <div class="grid-item">Double check (normal + flipped)</div>
+                                <div class="grid-item text-style-mono color-media">under 14.5ms</div>
+                            </div>
+                        </div>
+
+                        <!-- Interactive Tooltip Buttons overlay -->
+                        <button class="tooltip" style="inset: 12% auto auto 15%;" aria-label="Modal parameters details" data-tooltip-status="closed">
+                            <h4 class="text-style-mono">01</h4>
+                            <div class="tooltip_content">
+                                <div class="tooltip_dash"></div>
+                                <div class="tooltip_content-inner">
+                                    <h5>Connection Details</h5>
+                                    <p>Monitors data transfer rates and traffic details to spot unusual spikes.</p>
+                                </div>
+                            </div>
+                        </button>
+                        
+                        <button class="tooltip" style="inset: 38% auto auto 35%;" aria-label="Linguistic details" data-tooltip-status="closed">
+                            <h4 class="text-style-mono">02</h4>
+                            <div class="tooltip_content">
+                                <div class="tooltip_dash"></div>
+                                <div class="tooltip_content-inner">
+                                    <h5>Sentence Analysis</h5>
+                                    <p>Analyzes the structure of sentences to spot patterns typical of fake news articles.</p>
+                                </div>
+                            </div>
+                        </button>
+
+                        <button class="tooltip" style="inset: 60% auto auto 42%;" aria-label="Phishing parameters" data-tooltip-status="closed">
+                            <h4 class="text-style-mono">03</h4>
+                            <div class="tooltip_content">
+                                <div class="tooltip_dash"></div>
+                                <div class="tooltip_content-inner">
+                                    <h5>Spam Word Scanner</h5>
+                                    <p>Looks for spam trigger words and phrases commonly used in phishing emails.</p>
+                                </div>
+                            </div>
+                        </button>
+
+                        <button class="tooltip" style="inset: 80% auto auto 58%;" aria-label="Convolution details" data-tooltip-status="closed">
+                            <h4 class="text-style-mono">04</h4>
+                            <div class="tooltip_content">
+                                <div class="tooltip_dash"></div>
+                                <div class="tooltip_content-inner">
+                                    <h5>Detail Inspector</h5>
+                                    <p>Analyzes the face twice—once normal and once flipped—to ensure no AI glitch goes unnoticed.</p>
+                                </div>
+                            </div>
+                        </button>
+
+                        <button class="tooltip" style="inset: 30% 12% auto auto;" aria-label="Calibrations details" data-tooltip-status="closed">
+                            <h4 class="text-style-mono">05</h4>
+                            <div class="tooltip_content">
+                                <div class="tooltip_dash"></div>
+                                <div class="tooltip_content-inner">
+                                    <h5>Sensitivity Tuning</h5>
+                                    <p>Calibrated to be highly sensitive to even subtle AI-generated features in images.</p>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Scan Enforcement Center -->
+        <section class="section_enforcement_center" id="scanners">
+            <div class="padding-global">
+                <div class="container-large">
+                    <div class="section-heading">
+                        <h2 class="section-heading_eyebrow">AI Threat Scanner Center</h2>
+                        <div class="section-heading_dash"></div>
+                        <h3 class="heading_component heading-style-h4">Run immediate local scans on files, text, or network data</h3>
+                    </div>
+
+                    <div class="enforcement-terminal">
+                        <!-- Left Panel: Sidebar Navigation -->
+                        <div class="terminal-nav">
+                            <button class="terminal-nav-item active" data-target="flow-classifier" type="button">
+                                <div class="nav-item-header">
+                                    <span class="nav-num text-style-mono">01 //</span>
+                                    <span class="nav-title">Network Safety</span>
+                                </div>
+                                <div class="nav-subtitle text-style-mono">Scan Traffic</div>
+                                <span class="nav-indicator color-net"></span>
+                            </button>
+                            
+                            <button class="terminal-nav-item" data-target="news-verifier" type="button">
+                                <div class="nav-item-header">
+                                    <span class="nav-num text-style-mono">02 //</span>
+                                    <span class="nav-title">Fake News Scanner</span>
+                                </div>
+                                <div class="nav-subtitle text-style-mono">Scan Article</div>
+                                <span class="nav-indicator color-news"></span>
+                            </button>
+                            
+                            <button class="terminal-nav-item" data-target="email-auditor" type="button">
+                                <div class="nav-item-header">
+                                    <span class="nav-num text-style-mono">03 //</span>
+                                    <span class="nav-title">Email Scanner</span>
+                                </div>
+                                <div class="nav-subtitle text-style-mono">Scan Email</div>
+                                <span class="nav-indicator color-phish"></span>
+                            </button>
+                            
+                            <button class="terminal-nav-item" data-target="media-scanner" type="button">
+                                <div class="nav-item-header">
+                                    <span class="nav-num text-style-mono">04 //</span>
+                                    <span class="nav-title">Deepfake Scanner</span>
+                                </div>
+                                <div class="nav-subtitle text-style-mono">Scan Image</div>
+                                <span class="nav-indicator color-media"></span>
+                            </button>
+                        </div>
+
+                        <!-- Right Panel: Workspace Area -->
+                        <div class="terminal-workspace">
+                            
+                            <!-- Panel 1: Network Flow Classifier -->
+                            <div class="scanner-card terminal-pane active" id="flow-classifier">
+                                <div class="scanner-card_header">
+                                    <div class="scanner-icon icon-net">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-style-mono uppercase tracking-wider text-size-small">Network Safety Check</h4>
+                                        <p class="text-color-muted">Checks connection stats for cyber attacks</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="scanner-card_presets">
+                                    <span class="presets-label text-style-mono text-size-tiny">Presets:</span>
+                                    <div class="presets-row">
+                                        <button class="btn-preset active" onclick="loadTabularPreset('normal')">Safe Connection</button>
+                                        <button class="btn-preset" onclick="loadTabularPreset('anomaly')">DDoS Attack Flow</button>
+                                    </div>
+                                    <div class="preset-info-card text-size-small" id="tab-preset-info">
+                                        Standard normal user connection. Safe, balanced data traffic.
+                                    </div>
+                                </div>
+
+                                <form id="tabular-form" onsubmit="handleTabularSubmit(event)">
+                                    <div class="accordion-drawer" data-accordion-state="close">
+                                        <div class="accordion-drawer_header" onclick="toggleTabularDrawer()">
+                                            <span class="text-style-mono text-size-small text-color-secondary">Customize Traffic Parameters</span>
+                                            <svg class="accordion-arrow" id="drawer-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                                        </div>
+                                        <div class="accordion-drawer_pane">
+                                            <div class="accordion-drawer_content">
+                                                <div class="form-grid">
+                                                    <div class="input-field-wrap">
+                                                        <label for="tab-proto">Protocol</label>
+                                                        <select id="tab-proto" class="form-select">
+                                                            <option value="tcp">TCP</option>
+                                                            <option value="udp">UDP</option>
+                                                            <option value="unas">UNAS</option>
+                                                            <option value="ospf">OSPF</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="input-field-wrap">
+                                                        <label for="tab-service">Service Type</label>
+                                                        <select id="tab-service" class="form-select">
+                                                            <option value="-">- (None)</option>
+                                                            <option value="dns">DNS</option>
+                                                            <option value="http">HTTP</option>
+                                                            <option value="ftp">FTP</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="input-field-wrap">
+                                                        <label for="tab-state">State</label>
+                                                        <select id="tab-state" class="form-select">
+                                                            <option value="CON">CON</option>
+                                                            <option value="FIN">FIN</option>
+                                                            <option value="INT">INT</option>
+                                                            <option value="REQ">REQ</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="input-field-wrap">
+                                                        <label for="tab-sttl">Source TTL</label>
+                                                        <input type="number" id="tab-sttl" value="31" class="form-number">
+                                                    </div>
+                                                    <div class="input-field-wrap">
+                                                        <label for="tab-dttl">Dest TTL</label>
+                                                        <input type="number" id="tab-dttl" value="29" class="form-number">
+                                                    </div>
+                                                </div>
+
+                                                <div class="slider-field-wrap">
+                                                    <div class="slider-header">
+                                                        <label for="tab-dur">Connection Duration (seconds)</label>
+                                                        <span class="slider-val text-style-mono" id="val-tag-dur">0s</span>
+                                                    </div>
+                                                    <input type="range" id="tab-dur" min="0" max="60" step="0.0001" class="form-slider">
+                                                </div>
+                                                <div class="slider-field-wrap">
+                                                    <div class="slider-header">
+                                                        <label for="tab-rate">Packets Per Second</label>
+                                                        <span class="slider-val text-style-mono" id="val-tag-rate">0</span>
+                                                    </div>
+                                                    <input type="range" id="tab-rate" min="0" max="1000000" step="1" class="form-slider">
+                                                </div>
+                                                <div class="slider-field-wrap">
+                                                    <div class="slider-header">
+                                                        <label for="tab-sbytes">Data Sent from Source (Bytes)</label>
+                                                        <span class="slider-val text-style-mono" id="val-tag-sbytes">0 B</span>
+                                                    </div>
+                                                    <input type="range" id="tab-sbytes" min="0" max="100000" step="1" class="form-slider">
+                                                </div>
+                                                <div class="slider-field-wrap">
+                                                    <div class="slider-header">
+                                                        <label for="tab-dbytes">Data Received by Destination (Bytes)</label>
+                                                        <span class="slider-val text-style-mono" id="val-tag-dbytes">0 B</span>
+                                                    </div>
+                                                    <input type="range" id="tab-dbytes" min="0" max="100000" step="1" class="form-slider">
+                                                </div>
+                                                <div class="slider-field-wrap">
+                                                    <div class="slider-header">
+                                                        <label for="tab-sload">Data Speed Sent (bps)</label>
+                                                        <span class="slider-val text-style-mono" id="val-tag-sload">0 bps</span>
+                                                    </div>
+                                                    <input type="range" id="tab-sload" min="0" max="500000000" step="100" class="form-slider">
+                                                </div>
+                                                <div class="slider-field-wrap">
+                                                    <div class="slider-header">
+                                                        <label for="tab-dload">Data Speed Received (bps)</label>
+                                                        <span class="slider-val text-style-mono" id="val-tag-dload">0 bps</span>
+                                                    </div>
+                                                    <input type="range" id="tab-dload" min="0" max="50000000" step="100" class="form-slider">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <button type="submit" class="btn-submit" id="btn-tab-submit">
+                                        <span class="btn-submit_text">RUN TRAFFIC SCAN</span>
+                                    </button>
+                                </form>
+
+                                <div class="scanner-card_result">
+                                    <div class="report-placeholder" id="placeholder-network">
+                                        <p class="text-style-mono text-size-small">Click the button above to scan connection</p>
+                                    </div>
+                                    <div class="report-box hidden" id="result-network">
+                                        <div class="result-header">
+                                            <div class="radial-dial">
+                                                <svg width="80" height="80" viewBox="0 0 100 100">
+                                                    <circle class="dial-bg" cx="50" cy="50" r="42" fill="none" stroke-width="6"></circle>
+                                                    <circle class="dial-fill" id="circle-network" cx="50" cy="50" r="42" fill="none" stroke-width="6" stroke-dasharray="263.8" stroke-dashoffset="263.8"></circle>
+                                                </svg>
+                                                <div class="dial-val text-style-mono" id="val-network">0%</div>
+                                            </div>
+                                            <div class="result-badge-wrap">
+                                                <span class="text-size-tiny text-style-mono uppercase tracking-wider text-color-muted">Verdict:</span>
+                                                <div class="status-badge" id="badge-network">Pending</div>
+                                            </div>
+                                        </div>
+                                        <div class="result-details text-size-small" id="explanation-network"></div>
+                                    </div>
+                                    <div class="error-notification hidden" id="err-network"></div>
+                                </div>
+                            </div>
+
+                            <!-- Panel 2: Fake News Verifier -->
+                            <div class="scanner-card terminal-pane" id="news-verifier">
+                                <div class="scanner-card_header">
+                                    <div class="scanner-icon icon-news">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-style-mono uppercase tracking-wider text-size-small">Fake News Scanner</h4>
+                                        <p class="text-color-muted">Checks if a news article is real or fake</p>
+                                    </div>
+                                </div>
+
+                                <div class="scanner-card_presets">
+                                    <span class="presets-label text-style-mono text-size-tiny">Presets:</span>
+                                    <div class="presets-row">
+                                        <button class="btn-preset active" onclick="loadNewsPreset('real')">Verified News Article</button>
+                                        <button class="btn-preset" onclick="loadNewsPreset('fake')">Fake News Gossip</button>
+                                    </div>
+                                </div>
+
+                                <form id="news-form" onsubmit="handleNewsSubmit(event)">
+                                    <div class="input-field-wrap">
+                                        <label for="news-title">News Headline / Title</label>
+                                        <input type="text" id="news-title" class="form-text" placeholder="Enter headline title..." required>
+                                    </div>
+                                    <div class="input-field-wrap">
+                                        <label for="news-text">News Article Text</label>
+                                        <textarea id="news-text" class="form-textarea" rows="6" placeholder="Paste full article contents..." required></textarea>
+                                    </div>
+
+                                     <button type="submit" class="btn-submit" id="btn-news-submit">
+                                         <span class="btn-submit_text">VERIFY ARTICLE</span>
+                                     </button>
+                                 </form>
+ 
+                                 <div class="scanner-card_result">
+                                     <div class="report-placeholder" id="placeholder-news">
+                                         <p class="text-style-mono text-size-small">Click the button above to verify article</p>
+                                     </div>
+                                    <div class="report-box hidden" id="result-news">
+                                        <div class="result-header">
+                                            <div class="radial-dial">
+                                                <svg width="80" height="80" viewBox="0 0 100 100">
+                                                    <circle class="dial-bg" cx="50" cy="50" r="42" fill="none" stroke-width="6"></circle>
+                                                    <circle class="dial-fill" id="circle-news" cx="50" cy="50" r="42" fill="none" stroke-width="6" stroke-dasharray="263.8" stroke-dashoffset="263.8"></circle>
+                                                </svg>
+                                                <div class="dial-val text-style-mono" id="val-news">0%</div>
+                                            </div>
+                                            <div class="result-badge-wrap">
+                                                <span class="text-size-tiny text-style-mono uppercase tracking-wider text-color-muted">Verdict:</span>
+                                                <div class="status-badge" id="badge-news">Pending</div>
+                                            </div>
+                                        </div>
+                                        <div class="result-details text-size-small" id="explanation-news"></div>
+                                    </div>
+                                    <div class="error-notification hidden" id="err-news"></div>
+                                </div>
+                            </div>
+
+                            <!-- Panel 3: Phishing Email Auditor -->
+                            <div class="scanner-card terminal-pane" id="email-auditor">
+                                <div class="scanner-card_header">
+                                    <div class="scanner-icon icon-phish">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"></path><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-style-mono uppercase tracking-wider text-size-small">Email Phishing Scanner</h4>
+                                        <p class="text-color-muted">Audits emails for phishing links and scams</p>
+                                    </div>
+                                </div>
+
+                                <div class="scanner-card_presets">
+                                    <span class="presets-label text-style-mono text-size-tiny">Presets:</span>
+                                    <div class="presets-row">
+                                        <button class="btn-preset active" onclick="loadPhishingPreset('safe')">Normal Safe Email</button>
+                                        <button class="btn-preset" onclick="loadPhishingPreset('phish')">Urgent Phishing Alert</button>
+                                    </div>
+                                </div>
+
+                                <form id="phishing-form" onsubmit="handlePhishingSubmit(event)">
+                                    <div class="input-field-wrap">
+                                        <label for="phishing-text">Email Content Text</label>
+                                        <textarea id="phishing-text" class="form-textarea" rows="8" placeholder="Paste full raw email string content..." required></textarea>
+                                    </div>
+
+                                    <button type="submit" class="btn-submit" id="btn-phishing-submit">
+                                        <span class="btn-submit_text">SCAN EMAIL FOR SCAMS</span>
+                                    </button>
+                                </form>
+
+                                <div class="scanner-card_result">
+                                    <div class="report-placeholder" id="placeholder-phishing">
+                                        <p class="text-style-mono text-size-small">Click the button above to scan email</p>
+                                    </div>
+                                    <div class="report-box hidden" id="result-phishing">
+                                        <div class="result-header">
+                                            <div class="radial-dial">
+                                                <svg width="80" height="80" viewBox="0 0 100 100">
+                                                    <circle class="dial-bg" cx="50" cy="50" r="42" fill="none" stroke-width="6"></circle>
+                                                    <circle class="dial-fill" id="circle-phishing" cx="50" cy="50" r="42" fill="none" stroke-width="6" stroke-dasharray="263.8" stroke-dashoffset="263.8"></circle>
+                                                </svg>
+                                                <div class="dial-val text-style-mono" id="val-phishing">0%</div>
+                                            </div>
+                                            <div class="result-badge-wrap">
+                                                <span class="text-size-tiny text-style-mono uppercase tracking-wider text-color-muted">Verdict:</span>
+                                                <div class="status-badge" id="badge-phishing">Pending</div>
+                                            </div>
+                                        </div>
+                                        <div class="result-details text-size-small" id="explanation-phishing"></div>
+                                    </div>
+                                    <div class="error-notification hidden" id="err-phishing"></div>
+                                </div>
+                            </div>
+
+                            <!-- Panel 4: Media Spatial Scanner -->
+                            <div class="scanner-card terminal-pane" id="media-scanner">
+                                <div class="scanner-card_header">
+                                    <div class="scanner-icon icon-media">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-style-mono uppercase tracking-wider text-size-small">Deepfake Face Scanner</h4>
+                                        <p class="text-color-muted">Verifies if a face photo is real or AI-generated</p>
+                                    </div>
+                                </div>
+
+                                <div class="scanner-card_presets">
+                                    <span class="presets-label text-style-mono text-size-tiny">Presets:</span>
+                                    <div class="presets-row">
+                                        <button class="btn-preset" onclick="loadDeepfakeSample('real')">Real Person Photo</button>
+                                        <button class="btn-preset" onclick="loadDeepfakeSample('fake')">AI-Generated Face</button>
+                                    </div>
+                                </div>
+
+                                <form id="deepfake-form" onsubmit="handleDeepfakeSubmit(event)">
+                                    <div class="drag-upload-container" id="drop-zone" onclick="triggerFileInput()">
+                                        <input type="file" id="deepfake-file" accept="image/png, image/jpeg, image/jpg" class="hidden" onchange="handleFileSelect(event)">
+                                        
+                                        <div class="upload-ui-display" id="upload-elements-ui">
+                                            <div class="upload-icon-badge">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                                    <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
+                                                </svg>
+                                            </div>
+                                            <p class="upload-primary-text">Drag & drop image or browse</p>
+                                            <p class="upload-specs-text">Limits: JPG, PNG under 10MB</p>
+                                        </div>
+
+                                        <div class="upload-preview-box hidden" id="preview-box">
+                                            <div class="scan-laser-bar"></div>
+                                            <img id="preview-img" src="" alt="Face preview">
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" class="btn-submit" id="btn-deepfake-submit" disabled>
+                                        <span class="btn-submit_text">SCAN PHOTO FOR DEEPFAKE</span>
+                                    </button>
+                                </form>
+
+                                <div class="scanner-card_result">
+                                    <div class="report-placeholder" id="placeholder-deepfake">
+                                        <p class="text-style-mono text-size-small">Staged photo awaiting scan</p>
+                                    </div>
+                                    <div class="report-box hidden" id="result-deepfake">
+                                        <div class="result-header">
+                                            <div class="radial-dial">
+                                                <svg width="80" height="80" viewBox="0 0 100 100">
+                                                    <circle class="dial-bg" cx="50" cy="50" r="42" fill="none" stroke-width="6"></circle>
+                                                    <circle class="dial-fill" id="circle-deepfake" cx="50" cy="50" r="42" fill="none" stroke-width="6" stroke-dasharray="263.8" stroke-dashoffset="263.8"></circle>
+                                                </svg>
+                                                <div class="dial-val text-style-mono" id="val-deepfake">0%</div>
+                                            </div>
+                                            <div class="result-badge-wrap">
+                                                <span class="text-size-tiny text-style-mono uppercase tracking-wider text-color-muted">Verdict:</span>
+                                                <div class="status-badge" id="badge-deepfake">Pending</div>
+                                            </div>
+                                        </div>
+                                        <div class="result-details text-size-small" id="explanation-deepfake"></div>
+                                    </div>
+                                    <div class="error-notification hidden" id="err-deepfake"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Operations Logger Feed Console -->
+        <section class="section_slot logs-section" id="logs-terminal">
+            <div class="padding-global">
+                <div class="container-large">
+                    <div class="monospace-terminal-console">
+                        <div class="terminal-bar-header">
+                            <div class="terminal-bar-title">
+                                <span class="terminal-prompt">&gt;</span> LIVE SECURITY ACTIVITY LOGS
+                            </div>
+                            <div class="terminal-bar-port">PORT: 8088</div>
+                        </div>
+                        <div class="terminal-logger-feed" id="scrolling-terminal-logs">
+                            <!-- Populated dynamically -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Architecture FAQ (Accordions) -->
+        <section class="section_slot faq-section" id="faq">
+            <div class="padding-global">
+                <div class="container-large">
+                    <div class="section-heading">
+                        <h2 class="section-heading_eyebrow">Architecture FAQ</h2>
+                        <div class="section-heading_dash"></div>
+                        <h3 class="heading_component heading-style-h4">Under the hood of the MultiShield framework</h3>
+                    </div>
+
+                    <div class="accordion_list-wrapper">
+                        <div class="accordion_list">
+                            
+                            <!-- Accordion 1 -->
+                            <div data-accordion-state="close" data-accordion="component" class="accordion_component">
+                                <div class="accordion_inner">
+                                    <button data-accordion="toggle" aria-label="Toggle accordion panel" class="accordion_toggle">
+                                        <h4 class="accordion_toggle-heading text-size-xlarge">How are these models structured and trained?</h4>
+                                        <div class="accordion_toggle-icon">
+                                            <div class="accordion_toggle-icon-dash"></div>
+                                            <div class="accordion_toggle-icon-dash is-moving"></div>
+                                        </div>
+                                    </button>
+                                    <div data-accordion="pane" class="accordion_pane">
+                                        <div class="accordion_pane-mask">
+                                            <div class="accordion_pane-content">
+                                                <p>MultiShield hosts four neural classifiers locally:</p>
+                                                <ul>
+                                                    <li><strong>Flow Classifier:</strong> A 5-layer feed-forward Multi-Layer Perceptron (MLP) trained on standard UNSW-NB15 connection header profiles.</li>
+                                                    <li><strong>News & Email Auditors:</strong> Multi-layer Bi-Directional Long Short-Term Memory (LSTM) models mapping syntactic weights, vocabulary frequencies, and stopword occurrences.</li>
+                                                    <li><strong>Media Spatial Scanner:</strong> A deep Convolutional Neural Network (ResNet-18) evaluating structural face pixel frequencies to detect GAN generator textures.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Accordion 2 -->
+                            <div data-accordion-state="close" data-accordion="component" class="accordion_component">
+                                <div class="accordion_inner">
+                                    <button data-accordion="toggle" aria-label="Toggle accordion panel" class="accordion_toggle">
+                                        <h4 class="accordion_toggle-heading text-size-xlarge">Why does CUDA execution latency matter?</h4>
+                                        <div class="accordion_toggle-icon">
+                                            <div class="accordion_toggle-icon-dash"></div>
+                                            <div class="accordion_toggle-icon-dash is-moving"></div>
+                                        </div>
+                                    </button>
+                                    <div data-accordion="pane" class="accordion_pane">
+                                        <div class="accordion_pane-mask">
+                                            <div class="accordion_pane-content">
+                                                <p>Evaluating threat sequences on local PyTorch CUDA tensors reduces execution latency to under 15ms. Parallelizing matrix multiplication on local GPU hardware blocks threats inline before packet routing or file system storage actions occur, avoiding high cloud token latency and pricing variables.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Accordion 3 -->
+                            <div data-accordion-state="close" data-accordion="component" class="accordion_component">
+                                <div class="accordion_inner">
+                                    <button data-accordion="toggle" aria-label="Toggle accordion panel" class="accordion_toggle">
+                                        <h4 class="accordion_toggle-heading text-size-xlarge">How is the ResNet image verification calibrated?</h4>
+                                        <div class="accordion_toggle-icon">
+                                            <div class="accordion_toggle-icon-dash"></div>
+                                            <div class="accordion_toggle-icon-dash is-moving"></div>
+                                        </div>
+                                    </button>
+                                    <div data-accordion="pane" class="accordion_pane">
+                                        <div class="accordion_pane-mask">
+                                            <div class="accordion_pane-content">
+                                                <p>The Media Scanner implements Test-Time Augmentation (TTA). Images are scaled, normalized, and evaluated alongside horizontal flips. The resulting probabilities are averaged, using a calibrated decision threshold of <code>0.4</code> to ensure StyleGAN facial textures and frequency anomalies are identified with high sensitivity.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Accordion 4 -->
+                            <div data-accordion-state="close" data-accordion="component" class="accordion_component">
+                                <div class="accordion_inner">
+                                    <button data-accordion="toggle" aria-label="Toggle accordion panel" class="accordion_toggle">
+                                        <h4 class="accordion_toggle-heading text-size-xlarge">What are the limitations of the MultiShield framework?</h4>
+                                        <div class="accordion_toggle-icon">
+                                            <div class="accordion_toggle-icon-dash"></div>
+                                            <div class="accordion_toggle-icon-dash is-moving"></div>
+                                        </div>
+                                    </button>
+                                    <div data-accordion="pane" class="accordion_pane">
+                                        <div class="accordion_pane-mask">
+                                            <div class="accordion_pane-content">
+                                                <p>While highly optimized, MultiShield has several constraints:</p>
+                                                <ul>
+                                                    <li><strong>Model Drift:</strong> The threat models are trained on specific static subsets (e.g. UNSW-NB15, StyleGAN2) and may require retraining or fine-tuning when faced with fresh, zero-day threat formats or adversarial inputs.</li>
+                                                    <li><strong>Sequence Limits:</strong> LSTMs for news and phishing email auditing have fixed max-sequence token limits (256 tokens) and may lose context on extremely long files.</li>
+                                                    <li><strong>Face Orientation:</strong> The Deepfake ResNet classifier is optimized for centered face portraits and performs best when face detection pre-crops the input images.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="padding-global">
+                <div class="container-large">
+                    <div class="footer_inner">
+                        <div class="footer_brand">
+                            <span class="text-style-mono text-size-small">MULTISHIELD // INTELLIGENCE PORTAL</span>
+                            <p class="text-size-tiny text-color-muted">Copyright &copy; <span data-current-year>2026</span> MultiShield Core. All rights reserved.</p>
+                        </div>
+                        <div class="footer_links text-style-mono text-size-tiny">
+                            <a href="#overview">TOP</a>
+                            <a href="#scanners">ENFORCEMENT HUB</a>
+                            <a href="#logs-terminal">LIVE LOGGER</a>
+                            <a href="#faq">FAQ</a>
+                            <a href="https://github.com/Manahil038/MultiShield-A-Unified-Multimodal-Deep-Learning-System-for-Cybersecurity-Threat-Detection-" target="_blank">GITHUB REPO</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Core Script -->
+    <script src="script.js?v=9.0"></script>
+</body>
+</html>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    let currentPanelIndex = 1;
+    const totalPanels = 4;
+    setInterval(() => {
+        for(let i=1; i<=totalPanels; i++) {
+            const p = document.getElementById('visual-panel-' + i);
+            const s = document.querySelector('.how-step[data-step=\"' + i + '\"]');
+            if(p) p.classList.remove('active');
+            if(s) s.classList.remove('active');
+        }
+        currentPanelIndex = (currentPanelIndex % totalPanels) + 1;
+        const nextP = document.getElementById('visual-panel-' + currentPanelIndex);
+        const nextS = document.querySelector('.how-step[data-step=\"' + currentPanelIndex + '\"]');
+        if(nextP) nextP.classList.add('active');
+        if(nextS) nextS.classList.add('active');
+    }, 2500);
+});
+</script>

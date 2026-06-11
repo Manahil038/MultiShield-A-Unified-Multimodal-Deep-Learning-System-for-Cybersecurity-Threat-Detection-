@@ -1,0 +1,12 @@
+base_channels: 32
+dropout_p: 0.3
+model: DeepfakeCNN
+num_classes: 1
+training:
+  batch_size: 32
+  epochs: 10
+  gradient_clip: 1.0
+  learning_rate: 0.001
+  mixed_precision: true
+  patience: 7
+  weight_decay: 0.0001

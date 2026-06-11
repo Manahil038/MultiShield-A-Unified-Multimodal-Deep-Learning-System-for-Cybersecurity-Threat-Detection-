@@ -1,0 +1,22 @@
+# Data (raw + processed, too large for GitHub)
+data/
+*.zip
+*.csv
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.ipynb_checkpoints/
+
+# PyTorch checkpoints
+checkpoints/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Installers
+*.msi
